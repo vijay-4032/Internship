@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: linear-gradient(#85D3FE 0%, #fff 100% );
+}
+.boxContainer
+{
+  margin: auto;
+  margin-top: auto;
+  position: absolute;
+  width: 530px;
+  height: 35px;
+  left: 390px;
+  top: 60px;
+  background: #EAEAEA;
+  border-radius: 19px;
+}
+.elementsContainer
+{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #747474;
+  background: #91D8FF ;
+  box-shadow: 5px 5px 10px #444444;
+  vertical-align: middle;
+  border-radius: 13px;
+}
+.search
+{
+  border: none;
+  height: 100%;
+  width: 98%;
+  padding: 1px 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Nunito";
+  color: #000000;
+  font-weight: 500;
+}
+.search:focus
+{
+  outline: none;
+}
+.material-icons
+{
+  font-size: 30;
+  color: #000000;
+}
+nav{
+  position: absolute;
+  margin: 270px auto 0;
+  border: 2px solid #747474;
+  box-shadow: 5px 5px 10px #444444;
+  top: -140px;
+  width: 395px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+nav .animation{
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  z-index: 0;
+  background: #005787;
+  width: 220px;
+  border-radius: 8px;
+  transition: all .5s ease 0;
+}
+a:nth-child(1)
+{
+  width: 220px;
+}
+nav .start-COURSECURRICULUM,a:nth-child(1):hover~.animation
+{
+  width: 220px;
+  left: 0;
+}
+a:nth-child(2)
+{
+  width: 170px;
+}
+nav .start-RELATEDCOURSE,a:nth-child(2):hover~.animation
+{
+  width: 170px;
+  left: 220px;
+}
+
+.slider
+{
+  padding-top: 200px;
+  padding-left: 50px;
+  max-width: 1550px;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  background: linear-gradient(#91D8FF 100%, #fff 100% );
+}
+.slider .card
+{
+  box-shadow: 5px 5px 10px #444444;
+  border-radius: 10px;
+  background: #2E769D ;
+  flex: 1;
+  margin: 0 10px;
+}
+.slider .card .img
+{
+height: 200px;
+width: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #FED488;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+body .wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200vh;
+  background: linear-gradient(#72CDFF 0%, #fff 100% );
+}
+.wrapper{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .table{
+  background: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.table .price-section{
+  display: flex;
+  justify-content: center;
+}
+.table .price-area{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  line-height: 117px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+}
+.price-area .inner-area .price{
+  font-size: 45px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+.table .package-name{
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.table .package-name::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+}
+.table .features li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name{
+  font-size: 17px;
+  font-weight: 400;
+}
+.features li .icon{
+  font-size: 15px;
+}
+.features li .icon.check{
+  color: #2db94d;
+}
+.features li .icon.cross{
+  color: #cd3241;
+}
+.table .btn{
+  width: 100%;
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+.table .btn button{
+  width: 80%;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.table .btn button:hover{
+  border-radius: 5px;
+}
+.basic .features li::selection{
+  background: #ffd861;
+}
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+  background: #ffd861;
+}
+.basic .btn button{
+  border: 2px solid #ffd861;
+  background: #fff;
+  color: #ffd861;
+}
+.basic .btn button:hover{
+  background: #ffd861;
+  color: #fff;
+}
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area{
+  background: #a26bfa;
+}
+.premium .btn button{
+  border: 2px solid #a26bfa;
+  color: #a26bfa;
+  background: #fff;
+}
+.premium .btn button:hover{
+  background: #833af8;
+}
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+  background: #43ef8b;
+}
+.ultimate .btn button{
+  border: 2px solid #43ef8b;
+  color: #43ef8b;
+  background: #fff;
+}
+.ultimate .btn button:hover{
+  background: #43ef8b;
+  color: #fff;
+}
+.Excellent ::selection,
+.Excellent .price-area,
+.Excellent .inner-area{
+  background: #3CBAFF;
+}
+.Excellent .btn button{
+  border: 2px solid #3CBAFF;
+  color: #3CBAFF;
+  background: #fff;
+}
+.Excellent .btn button:hover{
+  background: #3CBAFF;
+  color: #fff;
+}
+.basic .package-name{
+  background: #ffecb3;
+}
+.premium .package-name{
+  background: #d0b3ff;
+}
+.ultimate .package-name{
+  background: #baf8d4;
+}
+.Excellent .package-name{
+  background: #baf8d4;
+}
+.basic .package-name::before{
+  content: "Artificial Intelligence";
+  font-size: 25px;
+}
+.premium .package-name::before{
+  content: "Machine Learning";
+  font-size: 24px;
+}
+.ultimate .package-name::before{
+  content: "Python";
+  font-size: 24px;
+}
+.Excellent .package-name::before{
+  content: "Data Science";
+  font-size: 24px;
+}
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .table{
+    width: 100%;
+  }
+}
+::selection{
+  color: #fff;
+}
+
+}
